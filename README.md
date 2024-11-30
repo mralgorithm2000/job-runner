@@ -175,8 +175,8 @@ changeJobRunnerStatus(10, 'paused'); // Pauses the job with ID 10
 ```
 
 The changeJobRunnerStatus function takes the job ID and the desired status as arguments.
--- You can change a job with a status of "queued" or "retrying" to "paused".
--- You can also change a job with a status of "paused" back to "queued".
+- You can change a job with a status of "queued" or "retrying" to "paused".
+- You can also change a job with a status of "paused" back to "queued".
 
 ### Running the Queue
 
