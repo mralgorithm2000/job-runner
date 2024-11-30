@@ -40,7 +40,7 @@ To get started with the Laravel Background Job Manager, follow these steps:
     ```bash
     php artisan vendor:publish --provider="Mralgorithm\\JobRunner\\JobRunnerServiceProvider"
    ```
-   
+
     After publishing, the configuration file will be located in the config directory of your Laravel application. Be sure to customize it by specifying the classes and methods you wish to allow for background processing.
 
 ### Configuration
@@ -83,9 +83,9 @@ The package includes a built-in dashboard panel that allows you to:
 
 To access the panel, go to `http://your-domain/mralgorithm`.
 
-![Add new Job](https://freeimage.host/i/20NSTbt)
+![Add new Job](https://iili.io/20ej13B.png)
 
-![Jobs List](https://freeimage.host/i/20Nihu4)
+![Jobs List](https://iili.io/20Nihu4.png)
 
 ### Helper Function
 
