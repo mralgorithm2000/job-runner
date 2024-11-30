@@ -1,0 +1,28 @@
+{
+    "name": "mralgorithm/job-runner",
+    "description": "A Laravel package to run PHP classes as background jobs",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mralgorithm\\JobRunner\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "MohammadReza Aghajani",
+            "email": "mralgorithm.2000@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers":[
+                "Mralgorithm\\JobRunner\\JobRunnerServiceProvider"
+            ]
+        }
+    }
+}
