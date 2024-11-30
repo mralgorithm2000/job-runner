@@ -24,5 +24,7 @@
                 "Mralgorithm\\JobRunner\\JobRunnerServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
