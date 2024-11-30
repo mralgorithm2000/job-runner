@@ -19,6 +19,7 @@ This tool is perfect for applications that require offloading tasks like notific
 5. [Example Usage](#example-usage)
 6. [Running the Queue](#running-the-queue)
 7. [Running the Queue Continuousl](#running-the-queue-continuousl)
+8. [Logs](#logs)
 8. [Contributing](#contributing)
 9. [License](#license)
 
