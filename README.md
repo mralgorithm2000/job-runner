@@ -33,13 +33,14 @@ To get started with the Laravel Background Job Manager, follow these steps:
 
    ```bash
    composer require mralgorithm/job-runner
-
+   ```
 2. **Publish the configuration file**:
     The configuration file is essential for defining approved classes and methods, ensuring secure execution of background jobs. To publish the file, run the command below:
 
     ```bash
     php artisan vendor:publish --provider="Mralgorithm\\JobRunner\\JobRunnerServiceProvider"
-
+   ```
+   
     After publishing, the configuration file will be located in the config directory of your Laravel application. Be sure to customize it by specifying the classes and methods you wish to allow for background processing.
 
 ### Configuration
