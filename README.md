@@ -43,6 +43,12 @@ To get started with the Laravel Background Job Manager, follow these steps:
 
     After publishing, the configuration file will be located in the config directory of your Laravel application. Be sure to customize it by specifying the classes and methods you wish to allow for background processing.
 
+3. **Run the Migration"
+   Run the following command to create the essential tables:
+   ```bash
+   php artisan migrate
+   ```
+
 # Configuration
 
 For security reasons, you need to explicitly specify the classes and methods that are allowed to be added to the job queue. This configuration is managed in the `config/jobrunner.php` file.
@@ -294,6 +300,15 @@ net start LaravelQueueWorker
 ```
 
 This method will ensure that the queue worker runs as a background service and restarts on system reboots.
+
+# Logs
+
+The system stores detailed logs for each job separately, making it easy to monitor and debug your background jobs.
+
+- Logs are stored in the `storage/logs/jobs` directory.
+- Each job has its own log file, named using the job's unique identifier.
+
+Make sure the `storage/logs` directory is writable by your application to ensure logs are properly stored.
 
 # Contributing
 
