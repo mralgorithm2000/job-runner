@@ -24,7 +24,7 @@ This tool is perfect for applications that require offloading tasks like notific
 
 ---
 
-## Installation
+# Installation
 
 To get started with the Laravel Background Job Manager, follow these steps:
 
@@ -43,7 +43,7 @@ To get started with the Laravel Background Job Manager, follow these steps:
 
     After publishing, the configuration file will be located in the config directory of your Laravel application. Be sure to customize it by specifying the classes and methods you wish to allow for background processing.
 
-### Configuration
+# Configuration
 
 For security reasons, you need to explicitly specify the classes and methods that are allowed to be added to the job queue. This configuration is managed in the `config/jobrunner.php` file.
 
@@ -63,7 +63,7 @@ return [
 
 -The array keys should be the fully qualified class names (e.g., Mralgorithm\JobRunner\TestClass::class).-The array values should be an array of method names that can be executed for that class.
 
-### Panel
+# Panel
 
 The package includes a built-in dashboard panel that allows you to:
 
@@ -87,7 +87,7 @@ To access the panel, go to `http://your-domain/mralgorithm`.
 
 ![Jobs List](https://iili.io/20Nihu4.png)
 
-### Helper Function
+# Helper Function
 
 The Laravel Background Job Manager package includes global helper functions that you can use after installation to manage jobs programmatically. These functions make it easy to add, update, remove, and change the status of jobs directly from your code.
 
@@ -109,7 +109,7 @@ The Laravel Background Job Manager package includes global helper functions that
      - You can change a job with a status of **"paused"** back to **"queued"**.
 
 
-### Example Usage
+# Example Usage
 
 To demonstrate how to use the Laravel Background Job Manager, we have created a `TestClass` that is included in the approved classes by default. You can use this class for testing job creation and management.
 
@@ -178,7 +178,7 @@ The changeJobRunnerStatus function takes the job ID and the desired status as ar
 - You can change a job with a status of "queued" or "retrying" to "paused".
 - You can also change a job with a status of "paused" back to "queued".
 
-### Running the Queue
+# Running the Queue
 
 Once you've added jobs to the queue, you need to run the queue worker to process them. You can do this using the following Artisan command:
 
@@ -188,11 +188,11 @@ php artisan jobs:process
 
 This command will process the jobs in the queue and execute the code you added.
 
-### Running the Queue Continuously
+# Running the Queue Continuously
 
 To keep your Laravel queue worker running continuously, you can set up the following solutions depending on your operating system:
 
-#### For Linux: Using Supervisor
+## For Linux: Using Supervisor
 
 Supervisor is a process manager that ensures your Laravel queue worker runs continuously and restarts automatically if it stops.
 
@@ -242,9 +242,9 @@ sudo supervisorctl start laravel-queue:*
 
 Now, your Laravel queue worker will run continuously on Linux.
 
-#### For Windows: Using Task Scheduler or NSSM
+## For Windows: Using Task Scheduler or NSSM
 
-## Option 1: Using Task Scheduler
+### Option 1: Using Task Scheduler
 
 **Step 1: Create a Batch File**
 
@@ -295,7 +295,7 @@ net start LaravelQueueWorker
 
 This method will ensure that the queue worker runs as a background service and restarts on system reboots.
 
-### Contributing
+# Contributing
 
 We welcome contributions to the Laravel Background Job Manager package! Your help can make this package even better. Below are guidelines and best practices for contributing.
 
@@ -320,7 +320,7 @@ We welcome contributions to the Laravel Background Job Manager package! Your hel
     ```
 7. **Create a Pull Request**: Go to the original repository and click on **New Pull Request**. Select your feature branch and submit the pull request for review.
 
-### License
+# License
 
 The Laravel Background Job Manager package is open-source software licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
