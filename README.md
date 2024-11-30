@@ -158,7 +158,7 @@ updateJobRunner(
 );
 ```
 
-#### Updating an Existing Job
+#### Removing a Job
 
 To remove an existing job, you can use the removeJobRunner helper function. Here's an example:
 
@@ -166,7 +166,7 @@ To remove an existing job, you can use the removeJobRunner helper function. Here
 removeJobRunner(1); // Removes the job with ID 11
 ```
 
-#### Updating an Existing Job
+#### Changing Job Status
 
 To change the status of a job, use the changeJobRunnerStatus helper function. Below is an example:
 
@@ -175,8 +175,8 @@ changeJobRunnerStatus(10, 'paused'); // Pauses the job with ID 10
 ```
 
 The changeJobRunnerStatus function takes the job ID and the desired status as arguments.
---You can change a job with a status of "queued" or "retrying" to "paused".
---You can also change a job with a status of "paused" back to "queued".
+-- You can change a job with a status of "queued" or "retrying" to "paused".
+-- You can also change a job with a status of "paused" back to "queued".
 
 ### Running the Queue
 
