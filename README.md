@@ -187,7 +187,7 @@ php artisan jobs:process
 
 This command will process the jobs in the queue and execute the code you added.
 
-### Running the Queue Continuously (For Production)
+### Running the Queue Continuously
 
 To keep your Laravel queue worker running continuously, you can set up the following solutions depending on your operating system:
 
